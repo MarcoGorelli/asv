@@ -133,6 +133,7 @@ class Conda(environment.Environment):
 
     def _setup(self):
         log.info("Creating conda environment for {0}".format(self.name))
+        os.system('conda list')
 
         conda_args, pip_args = self._get_requirements()
         env = dict(os.environ)
