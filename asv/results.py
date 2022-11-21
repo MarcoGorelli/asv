@@ -456,6 +456,7 @@ class Results:
             Which indices in a parametrized benchmark to update
 
         """
+        print(result.stderr)
         new_result = list(result.result)
         new_samples = list(result.samples)
         new_number = result.number
